@@ -9,6 +9,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  shake: ^2.2.0
+  vibration: ^1.8.3
+  video_player: ^2.8.1
 
 dev_dependencies:
   flutter_test:
@@ -18,7 +21,7 @@ flutter:
   uses-material-design: true
   assets:
     - images/
-  #   - images/a_dot_ham.jpeg
+    - video/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
