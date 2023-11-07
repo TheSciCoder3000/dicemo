@@ -49,7 +49,6 @@ class _DicePageState extends State<DicePage> {
       shakeCountResetTime: 3000,
       shakeThresholdGravity: 3.2,
     );
-    print('running init state');
   }
 
   @override
@@ -89,28 +88,46 @@ class _DicePageState extends State<DicePage> {
           VideoBackground(lucky: lucky),
           SafeArea(
             child: Center(
-              child: Row(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(dicePadding),
-                      child: Dice(
-                        turns: turns,
-                        getRandomDiceValues: getRandomDiceValues,
-                        rotateDice: rotateDice, 
-                        diceNum: leftDice,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(dicePadding),
+                          child: Dice(
+                            turns: turns,
+                            getRandomDiceValues: getRandomDiceValues,
+                            rotateDice: rotateDice, 
+                            diceNum: leftDice,
+                          ),
+                        ),
                       ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.all(dicePadding),
+                          child: Dice(
+                            turns: turns,
+                            getRandomDiceValues: getRandomDiceValues,
+                            rotateDice: rotateDice, 
+                            diceNum: rightDice,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(height: 20.0),
+                  Text(
+                    'Total: ${leftDice + rightDice}',
+                    style: const TextStyle(
+                      fontSize: 30.0
                     ),
                   ),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(dicePadding),
-                      child: Dice(
-                        turns: turns,
-                        getRandomDiceValues: getRandomDiceValues,
-                        rotateDice: rotateDice, 
-                        diceNum: rightDice,
-                      ),
+                  const Text(
+                    'Roll same values to win a prize',
+                    style: TextStyle(
+                      fontSize: 15.0
                     ),
                   )
                 ],
