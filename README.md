@@ -26,10 +26,10 @@ The main widget tree is the main widget that gets loaded when the flutter app fi
 
 ### Video Background Widget Tree
 
-The Video Background widget tree is separated from the main widget tree to improve readability. This is responsible for playing the video when the user rolls equal dice.__
+The Video Background widget tree is separated from the main widget tree to improve readability. This is responsible for playing the video when the user rolls equal dice.  
 ![Video background widget tree](https://github.com/TheSciCoder3000/dicemo/blob/main/widget_tree/video_background.jpg?raw=true)
 
 ### Dice Widget Tree
 
-The Dice widget tree is separated from the main widget tree to improve readability. This is responsible for rendering the dice which the user interacts with.__
+The Dice widget tree is separated from the main widget tree to improve readability. This is responsible for rendering the dice which the user interacts with.  
 ![Dice widget tree](https://github.com/TheSciCoder3000/dicemo/blob/main/widget_tree/dice.jpg?raw=true)
