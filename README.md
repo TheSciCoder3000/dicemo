@@ -21,6 +21,7 @@ The flutter progrom is created based on the widget tree below. The widget tree i
 ### Main Widget Tree
 
 The main widget tree is the main widget that gets loaded when the flutter app first starts. It starts with the MaterialApp widget. It is responsible for rendering the Video background and Dice widget.
+
 ![main widget tree](https://github.com/TheSciCoder3000/dicemo/blob/main/widget_tree/main.jpg?raw=true)
 
 ### Video Background Widget Tree
